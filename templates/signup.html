@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Medatdoor</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="/static/img/favicon.png" rel="icon">
+    <link href="/static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="/static/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="/static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="/static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/static/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="/static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- Template Main CSS File -->
+    <link href="/static/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: Medilab - v4.2.0
+  * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+    <style>
+        body {
+           
+            background-color: whitesmoke;
+            background-size: 700px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- signup form -->
+    <section style="color: whitesmoke;color:rgba(0, 0, 0, 0.712);">
+        <form  method="POST">{% csrf_token %}
+            <div class="container-fluid" style="width:550px;margin-top:50px;"><br>
+                <!-- <h1 class="well">Registration Form</h1> -->
+                <div class="col-lg-12 well">
+                    <div class="row">
+
+                        <form style="background-color: #fff">
+                            <div class="col-sm-12">
+                                <div class="row">
+                                    <div class="col-sm-6 form-group">
+                                        <label>First Name</label>
+                                        <input type="text" placeholder="Enter First Name Here"name="first_name" class="form-control"required>
+                                    </div>
+                                    <div class="col-sm-6 form-group">
+                                        <label>Last Name</label>
+                                        <input type="text" placeholder="Enter Last Name Here"name="last_name" class="form-control"required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Address</label>
+                                    <textarea placeholder="Enter Address Here"name="address" rows="3"
+                                        class="form-control"></textarea>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4 form-group">
+                                        <label>City</label>
+                                        <input type="text" placeholder="Enter City Name Here"name="city" class="form-control">
+                                    </div>
+                                    <div class="col-sm-4 form-group">
+                                        <label>State</label>
+                                        <input type="text" placeholder="Enter State Name Here"name="state" class="form-control"required>
+                                    </div>
+                                    <div class="col-sm-4 form-group">
+                                        <label>Zip</label>
+                                        <input type="text" placeholder="Enter Zip Code "name="zip" class="form-control"required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Password</label>
+                                        <input type="password" placeholder="Enter Password Here"name="password" class="form-control"required>
+                                    </div>
+                                </div>
+                                <!-- <div class="row">
+                                <div class="col-sm-6 form-group">
+                                    <label>Title</label>
+                                    <input type="text" placeholder="Enter Designation Here.." class="form-control">
+                                </div>
+                                <div class="col-sm-6 form-group">
+                                    <label>Company</label>
+                                    <input type="text" placeholder="Enter Company Name Here.." class="form-control">
+                                </div>
+                            </div> -->
+                                <div class="form-group">
+                                    <label>Phone Number</label>
+                                    <input type="text" placeholder="Enter Phone Number Here"name="phone_no" class="form-control"required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Email Address</label>
+                                    <input type="text" placeholder="Enter Email Address Here"name="email" class="form-control"required>
+                                </div>
+                                <!-- <div class="form-group">
+                                <label>Website</label>
+                                <input type="text" placeholder="Enter Website Name Here.." class="form-control">
+                            </div> -->
+                                <button type="submit" class="btn btn-primary ">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </section>
+</body>
+
+</html>
